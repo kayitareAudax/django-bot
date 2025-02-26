@@ -1,126 +1,61 @@
-from django.shortcuts import render, get_object_or_404
-from django.http import JsonResponse
-from .models import Chat, Page, Document, Session
-from django.views.decorators.csrf import csrf_exempt
-from django.views.decorators.http import require_http_methods
-import json
-from rest_framework.decorators import api_view,permission_classes
+import os
+from pydoc import text
+import ollama
+import chromadb
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.vectorstores import Chroma
+from langchain.embeddings.ollama import OllamaEmbeddings
+from PyPDF2 import PdfReader
+from rest_framework.response import Response
+from rest_framework.decorators import api_view, permission_classes, parser_classes
+from rest_framework.parsers import MultiPartParser
 from rest_framework.permissions import IsAuthenticated
+from django.core.files.storage import default_storage
+from chat_bot.models import Document
+from azure_config import client
+import os
 
-@csrf_exempt
-@require_http_methods(["POST"])
+#chroma db
+chroma_client = chromadb.PersistentClient(path='./chroma.db')
+embedding_model= OllamaEmbeddings(model="deepseek-r1:8b")
+
+@api_view(['POST'])
 @permission_classes([IsAuthenticated])
-def create_chat(request):
-    data=json.loads({request.body,request.user.id})
-    chat = Chat.objects.create(**data)
-    return JsonResponse({'id': chat.id, 'message': chat.message}, status=201)
+@parser_classes([MultiPartParser])
+def upload_pdf(request):
+    print("tried uploading")
+    uploaded_file=request.FILES['file']
+    if not uploaded_file:
+        return Response({'error': 'No file uploaded'}, status=400)
+    #save file on local storage
+    file_path = default_storage.save(uploaded_file.name, uploaded_file)
+    #extract text
+    reader=PdfReader(default_storage.path(file_path))
+    extracted_text="\n".join([page.extract_text() for page in reader.pages if page.extract_text()])
+    # save to my local DB
+    # pdf_doc=Document.objects.create(text=extracted_text,file=file_path)
+    # split text into chunks to generate response
+    text_splitter=RecursiveCharacterTextSplitter(chunk_size=500,chunk_overlap=50)
+    texts = text_splitter.split_text(extracted_text)
+    # store embeddings in the chroma db
+    vector_db=Chroma.from_texts(texts,embedding_model,persist_directory="./chroma.db")
+    return Response({"message":"PDF uploaded and processed","document_id":"done"})
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def query_rag(request):
+    query_text=request.data.get('query')
+    if not query_text:
+        return Response({'error': 'No query text provided'}, status=400)
+    vector_db=Chroma(persist_directory="./chroma.db",embedding_function=embedding_model)
+    #retrieve similar tezt
+    docs=vector_db.similarity_search(query_text,k=3)
+    retrieved_text = "\n".join([doc.page_content for doc in docs])
+    # generate the deepseek-r1 response
+    ollama_response=ollama.chat(model="deepseek-r1:8b",messages=[{"role":'user',"content":retrieved_text + '\n'+ query_text}])
+    return Response({"response":ollama_response['message']})
 
 @api_view(["GET"])
-@permission_classes([IsAuthenticated])
-def read_chat(request, chat_id):
-    chat = get_object_or_404(Chat, id=chat_id, session=request.user)
-    return JsonResponse({'id': chat.id, 'message': chat.message})
-
-@csrf_exempt
-@require_http_methods(["PUT"])
-def update_chat(request, chat_id):
-    data = json.loads(request.body)
-    chat = get_object_or_404(Chat, id=chat_id)
-    for key, value in data.items():
-        setattr(chat, key, value)
-    chat.save()
-    return JsonResponse({'id': chat.id, 'message': chat.message})
-
-@csrf_exempt
-@require_http_methods(["DELETE"])
-def delete_chat(request, chat_id):
-    chat = get_object_or_404(Chat, id=chat_id)
-    chat.delete()
-    return JsonResponse({'message': 'Chat deleted'}, status=204)
-
-@csrf_exempt
-@require_http_methods(["POST"])
-def create_page(request):
-    data = json.loads(request.body)
-    page = Page.objects.create(**data)
-    return JsonResponse({'id': page.id, 'title': page.title}, status=201)
-
-@require_http_methods(["GET"])
-def read_page(request, page_id):
-    page = get_object_or_404(Page, id=page_id)
-    return JsonResponse({'id': page.id, 'title': page.title})
-
-@csrf_exempt
-@require_http_methods(["PUT"])
-def update_page(request, page_id):
-    data = json.loads(request.body)
-    page = get_object_or_404(Page, id=page_id)
-    for key, value in data.items():
-        setattr(page, key, value)
-    page.save()
-    return JsonResponse({'id': page.id, 'title': page.title})
-
-@csrf_exempt
-@require_http_methods(["DELETE"])
-def delete_page(request, page_id):
-    page = get_object_or_404(Page, id=page_id)
-    page.delete()
-    return JsonResponse({'message': 'Page deleted'}, status=204)
-
-@csrf_exempt
-@require_http_methods(["POST"])
-def create_document(request):
-    data = json.loads(request.body)
-    document = Document.objects.create(**data)
-    return JsonResponse({'id': document.id, 'name': document.name}, status=201)
-
-@require_http_methods(["GET"])
-def read_document(request, document_id):
-    document = get_object_or_404(Document, id=document_id)
-    return JsonResponse({'id': document.id, 'name': document.name})
-
-@csrf_exempt
-@require_http_methods(["PUT"])
-def update_document(request, document_id):
-    data = json.loads(request.body)
-    document = get_object_or_404(Document, id=document_id)
-    for key, value in data.items():
-        setattr(document, key, value)
-    document.save()
-    return JsonResponse({'id': document.id, 'name': document.name})
-
-@csrf_exempt
-@require_http_methods(["DELETE"])
-def delete_document(request, document_id):
-    document = get_object_or_404(Document, id=document_id)
-    document.delete()
-    return JsonResponse({'message': 'Document deleted'}, status=204)
-
-@csrf_exempt
-@require_http_methods(["POST"])
-def create_session(request):
-    data = json.loads(request.body)
-    session = Session.objects.create(**data)
-    return JsonResponse({'id': session.id, 'user': session.user}, status=201)
-
-@require_http_methods(["GET"])
-def read_session(request, session_id):
-    session = get_object_or_404(Session, id=session_id)
-    return JsonResponse({'id': session.id, 'user': session.user})
-
-@csrf_exempt
-@require_http_methods(["PUT"])
-def update_session(request, session_id):
-    data = json.loads(request.body)
-    session = get_object_or_404(Session, id=session_id)
-    for key, value in data.items():
-        setattr(session, key, value)
-    session.save()
-    return JsonResponse({'id': session.id, 'user': session.user})
-
-@csrf_exempt
-@require_http_methods(["DELETE"])
-def delete_session(request, session_id):
-    session = get_object_or_404(Session, id=session_id)
-    session.delete()
-    return JsonResponse({'message': 'Session deleted'}, status=204)
+# @permission_classes([IsAuthenticated])
+def test_azure(request):
+    response=client.chat.completions.create(model=os.getenv("AZURE_DEPLOYMENT_NAME"),messages=[{"role":'user',"content":"Can you tell me a simple story"}])
+    return Response({"success":True,"response":response.choices[0].message.content})

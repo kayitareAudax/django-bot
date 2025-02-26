@@ -1,0 +1,639 @@
+[
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "importPath": "pydoc",
+        "description": "pydoc",
+        "isExtraImport": true,
+        "detail": "pydoc",
+        "documentation": {}
+    },
+    {
+        "label": "ollama",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "ollama",
+        "description": "ollama",
+        "detail": "ollama",
+        "documentation": {}
+    },
+    {
+        "label": "chromadb",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "chromadb",
+        "description": "chromadb",
+        "detail": "chromadb",
+        "documentation": {}
+    },
+    {
+        "label": "RecursiveCharacterTextSplitter",
+        "importPath": "langchain.text_splitter",
+        "description": "langchain.text_splitter",
+        "isExtraImport": true,
+        "detail": "langchain.text_splitter",
+        "documentation": {}
+    },
+    {
+        "label": "Chroma",
+        "importPath": "langchain.vectorstores",
+        "description": "langchain.vectorstores",
+        "isExtraImport": true,
+        "detail": "langchain.vectorstores",
+        "documentation": {}
+    },
+    {
+        "label": "OllamaEmbeddings",
+        "importPath": "langchain.embeddings.ollama",
+        "description": "langchain.embeddings.ollama",
+        "isExtraImport": true,
+        "detail": "langchain.embeddings.ollama",
+        "documentation": {}
+    },
+    {
+        "label": "PdfReader",
+        "importPath": "PyPDF2",
+        "description": "PyPDF2",
+        "isExtraImport": true,
+        "detail": "PyPDF2",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "permission_classes",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "parser_classes",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "permission_classes",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "MultiPartParser",
+        "importPath": "rest_framework.parsers",
+        "description": "rest_framework.parsers",
+        "isExtraImport": true,
+        "detail": "rest_framework.parsers",
+        "documentation": {}
+    },
+    {
+        "label": "IsAuthenticated",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "AllowAny",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "default_storage",
+        "importPath": "django.core.files.storage",
+        "description": "django.core.files.storage",
+        "isExtraImport": true,
+        "detail": "django.core.files.storage",
+        "documentation": {}
+    },
+    {
+        "label": "Document",
+        "importPath": "chat_bot.models",
+        "description": "chat_bot.models",
+        "isExtraImport": true,
+        "detail": "chat_bot.models",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "importPath": "azure_config",
+        "description": "azure_config",
+        "isExtraImport": true,
+        "detail": "azure_config",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "Token",
+        "importPath": "rest_framework.authtoken.models",
+        "description": "rest_framework.authtoken.models",
+        "isExtraImport": true,
+        "detail": "rest_framework.authtoken.models",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "AzureOpenAI",
+        "importPath": "openai",
+        "description": "openai",
+        "isExtraImport": true,
+        "detail": "openai",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "chat_bot.api.chat.urls",
+        "description": "chat_bot.api.chat.urls",
+        "peekOfCode": "urlpatterns = [\n    path(\"upload-pdf/\", upload_pdf, name=\"upload_pdf\"),\n    path(\"query-rag/\", query_rag, name=\"query_rag\"),\n    path(\"test-azure/\", test_azure, name=\"test_azure\"),\n]",
+        "detail": "chat_bot.api.chat.urls",
+        "documentation": {}
+    },
+    {
+        "label": "upload_pdf",
+        "kind": 2,
+        "importPath": "chat_bot.api.chat.views",
+        "description": "chat_bot.api.chat.views",
+        "peekOfCode": "def upload_pdf(request):\n    print(\"tried uploading\")\n    uploaded_file=request.FILES['file']\n    if not uploaded_file:\n        return Response({'error': 'No file uploaded'}, status=400)\n    #save file on local storage\n    file_path = default_storage.save(uploaded_file.name, uploaded_file)\n    #extract text\n    reader=PdfReader(default_storage.path(file_path))\n    extracted_text=\"\\n\".join([page.extract_text() for page in reader.pages if page.extract_text()])",
+        "detail": "chat_bot.api.chat.views",
+        "documentation": {}
+    },
+    {
+        "label": "query_rag",
+        "kind": 2,
+        "importPath": "chat_bot.api.chat.views",
+        "description": "chat_bot.api.chat.views",
+        "peekOfCode": "def query_rag(request):\n    query_text=request.data.get('query')\n    if not query_text:\n        return Response({'error': 'No query text provided'}, status=400)\n    vector_db=Chroma(persist_directory=\"./chroma.db\",embedding_function=embedding_model)\n    #retrieve similar tezt\n    docs=vector_db.similarity_search(query_text,k=3)\n    retrieved_text = \"\\n\".join([doc.page_content for doc in docs])\n    # generate the deepseek-r1 response\n    ollama_response=ollama.chat(model=\"deepseek-r1:8b\",messages=[{\"role\":'user',\"content\":retrieved_text + '\\n'+ query_text}])",
+        "detail": "chat_bot.api.chat.views",
+        "documentation": {}
+    },
+    {
+        "label": "test_azure",
+        "kind": 2,
+        "importPath": "chat_bot.api.chat.views",
+        "description": "chat_bot.api.chat.views",
+        "peekOfCode": "def test_azure(request):\n    response=client.chat.completions.create(model=os.getenv(\"AZURE_DEPLOYMENT_NAME\"),messages=[{\"role\":'user',\"content\":\"Can you tell me a simple story\"}])\n    return Response({\"success\":True,\"response\":response.choices[0].message.content})",
+        "detail": "chat_bot.api.chat.views",
+        "documentation": {}
+    },
+    {
+        "label": "chroma_client",
+        "kind": 5,
+        "importPath": "chat_bot.api.chat.views",
+        "description": "chat_bot.api.chat.views",
+        "peekOfCode": "chroma_client = chromadb.PersistentClient(path='./chroma.db')\nembedding_model= OllamaEmbeddings(model=\"deepseek-r1:8b\")\n@api_view(['POST'])\n@permission_classes([IsAuthenticated])\n@parser_classes([MultiPartParser])\ndef upload_pdf(request):\n    print(\"tried uploading\")\n    uploaded_file=request.FILES['file']\n    if not uploaded_file:\n        return Response({'error': 'No file uploaded'}, status=400)",
+        "detail": "chat_bot.api.chat.views",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "chat_bot.api.users.urls",
+        "description": "chat_bot.api.users.urls",
+        "peekOfCode": "urlpatterns = [\n    path(\"register/\", register_user, name=\"register\"),\n    path(\"login/\", login_user, name=\"login\"),\n    path(\"logout/\", logout_user, name=\"logout\"),\n]",
+        "detail": "chat_bot.api.users.urls",
+        "documentation": {}
+    },
+    {
+        "label": "register_user",
+        "kind": 2,
+        "importPath": "chat_bot.api.users.views",
+        "description": "chat_bot.api.users.views",
+        "peekOfCode": "def register_user(request):\n    username = request.data.get(\"username\")\n    email = request.data.get(\"email\")\n    password = request.data.get(\"password\")\n    print(username,email,password)\n    if User.objects.filter(username=username).exists():\n        return Response({\"error\": \"Invalid credentials\"}, status=status.HTTP_400_BAD_REQUEST)\n    user = User.objects.create_user(username=username, email=email, password=password)\n    token, created = Token.objects.get_or_create(user=user)\n    return Response({\"message\": \"User registered successfully\", \"token\": token.key}, status=status.HTTP_201_CREATED)",
+        "detail": "chat_bot.api.users.views",
+        "documentation": {}
+    },
+    {
+        "label": "login_user",
+        "kind": 2,
+        "importPath": "chat_bot.api.users.views",
+        "description": "chat_bot.api.users.views",
+        "peekOfCode": "def login_user(request):\n    username = request.data.get(\"username\")\n    password = request.data.get(\"password\")\n    user = authenticate(username=username, password=password)\n    if user:\n        token, created = Token.objects.get_or_create(user=user)\n        return Response({\"token\": token.key, \"username\": user.username}, status=status.HTTP_200_OK)\n    return Response({\"error\": \"Invalid credentials\"}, status=status.HTTP_400_BAD_REQUEST)\n@api_view([\"POST\"])\ndef logout_user(request):",
+        "detail": "chat_bot.api.users.views",
+        "documentation": {}
+    },
+    {
+        "label": "logout_user",
+        "kind": 2,
+        "importPath": "chat_bot.api.users.views",
+        "description": "chat_bot.api.users.views",
+        "peekOfCode": "def logout_user(request):\n    request.user.auth_token.delete()\n    return Response({\"message\": \"Logged out successfully\"}, status=status.HTTP_200_OK)",
+        "detail": "chat_bot.api.users.views",
+        "documentation": {}
+    },
+    {
+        "label": "getData",
+        "kind": 2,
+        "importPath": "chat_bot.api.views",
+        "description": "chat_bot.api.views",
+        "peekOfCode": "def getData(request):\n    data={\n        \"name\":\"John\",\n        \"age\":23,\n        \"city\":\"New York\"\n    }\n    return Response(data)",
+        "detail": "chat_bot.api.views",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "chat_bot.asgi",
+        "description": "chat_bot.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "chat_bot.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Document",
+        "kind": 6,
+        "importPath": "chat_bot.models",
+        "description": "chat_bot.models",
+        "peekOfCode": "class Document(models.Model):\n    text=models.TextField(max_length=100)\n    file=models.FileField(upload_to='uploads/')\n    def __str__(self):\n        return self.text",
+        "detail": "chat_bot.models",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "chat_bot.settings",
+        "description": "chat_bot.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = \"django-insecure-is%_77#5!esi5chjk%ndb8^cq(rfd(7y6j-4_m0l#3zqlmf*$)\"\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "chat_bot.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "chat_bot.settings",
+        "description": "chat_bot.settings",
+        "peekOfCode": "SECRET_KEY = \"django-insecure-is%_77#5!esi5chjk%ndb8^cq(rfd(7y6j-4_m0l#3zqlmf*$)\"\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",",
+        "detail": "chat_bot.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "chat_bot.settings",
+        "description": "chat_bot.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",",
+        "detail": "chat_bot.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "chat_bot.settings",
+        "description": "chat_bot.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",\n    \"chat_bot\",",
+        "detail": "chat_bot.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "chat_bot.settings",
+        "description": "chat_bot.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",\n    \"chat_bot\",\n    \"rest_framework\",\n    \"rest_framework.authtoken\",",
+        "detail": "chat_bot.settings",
+        "documentation": {}
+    },
+    {
+        "label": "REST_FRAMEWORK",
+        "kind": 5,
+        "importPath": "chat_bot.settings",
+        "description": "chat_bot.settings",
+        "peekOfCode": "REST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': [\n        'rest_framework.authentication.TokenAuthentication',\n    ],\n    'DEFAULT_PERMISSION_CLASSES': [\n        'rest_framework.permissions.IsAuthenticated',\n    ],\n}\nMIDDLEWARE = [\n    \"django.middleware.security.SecurityMiddleware\",",
+        "detail": "chat_bot.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "chat_bot.settings",
+        "description": "chat_bot.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    \"django.middleware.security.SecurityMiddleware\",\n    \"django.contrib.sessions.middleware.SessionMiddleware\",\n    \"django.middleware.common.CommonMiddleware\",\n    \"django.middleware.csrf.CsrfViewMiddleware\",\n    \"django.contrib.auth.middleware.AuthenticationMiddleware\",\n    \"django.contrib.messages.middleware.MessageMiddleware\",\n    \"django.middleware.clickjacking.XFrameOptionsMiddleware\",\n]\nROOT_URLCONF = \"chat_bot.urls\"",
+        "detail": "chat_bot.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "chat_bot.settings",
+        "description": "chat_bot.settings",
+        "peekOfCode": "ROOT_URLCONF = \"chat_bot.urls\"\nTEMPLATES = [\n    {\n        \"BACKEND\": \"django.template.backends.django.DjangoTemplates\",\n        \"DIRS\": [],\n        \"APP_DIRS\": True,\n        \"OPTIONS\": {\n            \"context_processors\": [\n                \"django.template.context_processors.debug\",\n                \"django.template.context_processors.request\",",
+        "detail": "chat_bot.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "chat_bot.settings",
+        "description": "chat_bot.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        \"BACKEND\": \"django.template.backends.django.DjangoTemplates\",\n        \"DIRS\": [],\n        \"APP_DIRS\": True,\n        \"OPTIONS\": {\n            \"context_processors\": [\n                \"django.template.context_processors.debug\",\n                \"django.template.context_processors.request\",\n                \"django.contrib.auth.context_processors.auth\",",
+        "detail": "chat_bot.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "chat_bot.settings",
+        "description": "chat_bot.settings",
+        "peekOfCode": "WSGI_APPLICATION = \"chat_bot.wsgi.application\"\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\nDATABASES = {\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.sqlite3\",\n        \"NAME\": BASE_DIR / \"db.sqlite3\",\n    }\n}\n# Password validation",
+        "detail": "chat_bot.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "chat_bot.settings",
+        "description": "chat_bot.settings",
+        "peekOfCode": "DATABASES = {\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.sqlite3\",\n        \"NAME\": BASE_DIR / \"db.sqlite3\",\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "chat_bot.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "chat_bot.settings",
+        "description": "chat_bot.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.UserAttributeSimilarityValidator\",\n    },\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.MinimumLengthValidator\",\n    },\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.CommonPasswordValidator\",\n    },",
+        "detail": "chat_bot.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "chat_bot.settings",
+        "description": "chat_bot.settings",
+        "peekOfCode": "LANGUAGE_CODE = \"en-us\"\nTIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "detail": "chat_bot.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "chat_bot.settings",
+        "description": "chat_bot.settings",
+        "peekOfCode": "TIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "detail": "chat_bot.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "chat_bot.settings",
+        "description": "chat_bot.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "detail": "chat_bot.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "chat_bot.settings",
+        "description": "chat_bot.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "detail": "chat_bot.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "chat_bot.settings",
+        "description": "chat_bot.settings",
+        "peekOfCode": "STATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "detail": "chat_bot.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "chat_bot.settings",
+        "description": "chat_bot.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "detail": "chat_bot.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "chat_bot.urls",
+        "description": "chat_bot.urls",
+        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path(\"\",include(\"chat_bot.api.urls\"))\n]",
+        "detail": "chat_bot.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "chat_bot.wsgi",
+        "description": "chat_bot.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "chat_bot.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault(\"DJANGO_SETTINGS_MODULE\", \"chat_bot.settings\")\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]
